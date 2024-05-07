@@ -3,4 +3,4 @@ Hi, I'm Amy! I'm the News Photo Editor of Vol. 120 of The Duke Chronicle, and I'
 
 Here's some of my work!
 
-<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/0cd136fbb97e50c182c5130e90ae628c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+<div class='sk-instagram-feed' data-embed-id='25409032'></div><script src='https://widgets.sociablekit.com/instagram-feed/widget.js' async defer></script>
