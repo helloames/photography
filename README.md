@@ -7,7 +7,7 @@ Here's some of my work!
 
 <head>
   <meta charset="utf-8">
-  <title>Instagram Feed</title>
+
 
   <link rel="stylesheet" href="assets/instagram-feed/style.css">
   <link rel="stylesheet" href="assets/slick/slick.css">
