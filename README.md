@@ -4,4 +4,3 @@ Please contact me at amy.zhang@duke.edu to book!
 
 Here's some of my work!
 
-<div class='sk-instagram-feed' data-embed-id='25409032'></div><script src='https://widgets.sociablekit.com/instagram-feed/widget.js' async defer></script>
