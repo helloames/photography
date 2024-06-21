@@ -14,7 +14,7 @@
             background: #fff;
         }
         header {
-            background: #000;
+            background: #666; /* Changed background to grey */
             color: #fff;
             text-align: center;
             padding: 1em 0;
@@ -47,7 +47,7 @@
             height: auto;
         }
         footer {
-            background: #000;
+            background: #666; /* Changed background to grey */
             color: #fff;
             text-align: center;
             padding: 1em 0;
@@ -92,4 +92,3 @@
     </footer>
 </body>
 </html>
-
