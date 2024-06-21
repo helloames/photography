@@ -39,18 +39,16 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1em;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
         }
         .gallery img {
             width: 100%;
-            height: auto;
-            margin-bottom: 1em; /* Added margin bottom to separate images */
-        }
-        @media (min-width: 768px) {
-            .gallery {
-                grid-template-columns: repeat(3, 1fr);
-            }
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
         }
         footer {
             background: #666;
@@ -77,7 +75,6 @@
             <p>Hi, I'm Amy! I'm the News Photo Editor of Vol. 120 of The Duke Chronicle, and I'm also a freelance photographer in Durham, NC. My 2024-2025 bookings are open.</p>
         </section>
         <section id="gallery" class="gallery">
-            <h2>Gallery</h2>
             <img src="images/photo1.jpg" alt="Photo 1">
             <img src="images/photo2.jpg" alt="Photo 2">
             <img src="images/photo3.jpg" alt="Photo 3">
