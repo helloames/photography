@@ -45,6 +45,7 @@
         .gallery img {
             width: 100%;
             height: auto;
+            margin-bottom: 1em; /* Added margin bottom to separate images */
         }
         @media (min-width: 768px) {
             .gallery {
@@ -97,4 +98,3 @@
     </footer>
 </body>
 </html>
-
