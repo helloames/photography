@@ -38,12 +38,11 @@
             margin-bottom: 2em;
         }
         .gallery {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 1em;
         }
         .gallery img {
-            max-width: calc(33.333% - 1em);
             width: 100%;
             height: auto;
         }
@@ -76,7 +75,12 @@
             <img src="images/photo1.jpg" alt="Photo 1">
             <img src="images/photo2.jpg" alt="Photo 2">
             <img src="images/photo3.jpg" alt="Photo 3">
-            <!-- Add more images as needed -->
+            <img src="images/photo4.jpg" alt="Photo 4">
+            <img src="images/photo5.jpg" alt="Photo 5">
+            <img src="images/photo6.jpg" alt="Photo 6">
+            <img src="images/photo7.jpg" alt="Photo 7">
+            <img src="images/photo8.jpg" alt="Photo 8">
+            <img src="images/photo9.jpg" alt="Photo 9">
         </section>
         <section id="contact" class="contact">
             <h2>Contact</h2>
