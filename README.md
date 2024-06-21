@@ -14,7 +14,7 @@
             background: #fff;
         }
         header {
-            background: #666; /* Changed background to grey */
+            background: #666;
             color: #fff;
             text-align: center;
             padding: 1em 0;
@@ -39,15 +39,20 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusted grid columns */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 1em;
         }
         .gallery img {
             width: 100%;
             height: auto;
         }
+        @media (min-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
         footer {
-            background: #666; /* Changed background to grey */
+            background: #666;
             color: #fff;
             text-align: center;
             padding: 1em 0;
@@ -92,5 +97,4 @@
     </footer>
 </body>
 </html>
-
 
