@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
+            background: #fff;
         }
         header {
-            background: #333;
+            background: #000;
             color: #fff;
             text-align: center;
             padding: 1em 0;
@@ -49,7 +47,7 @@
             height: auto;
         }
         footer {
-            background: #333;
+            background: #000;
             color: #fff;
             text-align: center;
             padding: 1em 0;
@@ -58,7 +56,7 @@
 </head>
 <body>
     <header>
-        <h1>My Photography Portfolio</h1>
+        <h1>Amy Zhang Photography</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -70,7 +68,7 @@
     <div class="container">
         <section id="about" class="about">
             <h2>About Me</h2>
-            <p>Hi, I'm Amy! I'm the News Photo Editor of Vol. 120 of The Duke Chronicle, and I'm also a freelance photographer in Durham, NC. My 2024-2025 bookings are open. Please contact me at amy.zhang@duke.edu to book! </p>
+            <p>Hi, I'm Amy! I'm the News Photo Editor of Vol. 120 of The Duke Chronicle, and I'm also a freelance photographer in Durham, NC. My 2024-2025 bookings are open.</p>
         </section>
         <section id="gallery" class="gallery">
             <h2>Gallery</h2>
@@ -81,11 +79,11 @@
         </section>
         <section id="contact" class="contact">
             <h2>Contact</h2>
-            <p>If you'd like to get in touch, please email me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+            <p>If you'd like to get in touch, please email me at <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a>.</p>
         </section>
     </div>
     <footer>
-        <p>&copy; 2024 My Photography Portfolio</p>
+        <p>&copy; 2024 Amy Zhang Photography</p>
     </footer>
 </body>
 </html>
