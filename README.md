@@ -72,7 +72,8 @@
         </section>
         <section id="gallery" class="gallery">
             <h2>Gallery</h2>
-	<p>Here’s a sampling of my past work.</p>
+	#<p>Here’s a sampling of my past work.</p>
+</section>
             <img src="images/photo1.jpg" alt="Photo 1">
             <img src="images/photo2.jpg" alt="Photo 2">
             <img src="images/photo3.jpg" alt="Photo 3">
@@ -93,5 +94,4 @@
     </footer>
 </body>
 </html>
-
 
