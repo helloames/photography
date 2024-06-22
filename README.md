@@ -1,3 +1,6 @@
+# ignore all of this
+# all images in portfolio are in the images folder
+
 
 <html lang="en">
 <head>
