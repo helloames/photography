@@ -86,10 +86,7 @@
             <img src="images/photo8.jpg" alt="Photo 8">
             <img src="images/photo9.jpg" alt="Photo 9">
         </section>
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, please email me at <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a>.</p>
-        </section>
+
     </div>
     <footer>
         <p>&copy; 2024 Amy Zhang Photography</p>
