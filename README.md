@@ -73,6 +73,7 @@
             <p>If you'd like to get in touch, please email me at <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a>.</p>
         </section>
         <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
             <img src="images/photo1.jpg" alt="Photo 1">
             <img src="images/photo2.jpg" alt="Photo 2">
             <img src="images/photo3.jpg" alt="Photo 3">
