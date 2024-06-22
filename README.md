@@ -79,7 +79,10 @@
             <img src="images/photo6.jpg" alt="Photo 6">
             <img src="images/photo7.jpg" alt="Photo 7">
             <img src="images/photo8.jpg" alt="Photo 8">
-            <img src="images/photo9.jpg" alt="Photo 9">
+            <img src="images/photo9.jpg" alt="Photo 9">            
+            <img src="images/photo10.jpg" alt="Photo 10">
+            <img src="images/photo11.jpg" alt="Photo 11">
+            <img src="images/photo12.jpg" alt="Photo 12">
         </section>
     </div>
     <footer>
