@@ -85,7 +85,7 @@
             <img src="images/photo11.jpg" alt="Photo 11">
             <img src="images/photo12.jpg" alt="Photo 12">            
             <img src="images/photo13.jpg" alt="Photo 13">
-            <img src="images/photo14.jpg" alt="Photo 14">
+            <img src="images/photo14.jpg" alt="Photo 14"> 
             <img src="images/photo15.jpg" alt="Photo 15">
         </section>
     </div>
