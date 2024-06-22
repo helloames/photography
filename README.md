@@ -14,8 +14,8 @@
             background: #fff;
         }
         header {
-            background: #666;
-            color: #fff;
+            background: #fff;
+            color: #000;
             text-align: center;
             padding: 1em 0;
         }
@@ -28,13 +28,12 @@
             margin: 0 1em;
         }
         nav ul li a {
-            color: #fff;
+            color: #000;
             text-decoration: none;
         }
         .container {
             padding: 2em;
         }
-
         .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -49,8 +48,8 @@
             border-radius: 4px;
         }
         footer {
-            background: #666;
-            color: #fff;
+            background: #fff;
+            color: #000;
             text-align: center;
             padding: 1em 0;
         }
@@ -84,7 +83,6 @@
             <img src="images/photo8.jpg" alt="Photo 8">
             <img src="images/photo9.jpg" alt="Photo 9">
         </section>
-
     </div>
     <footer>
         <p>&copy; 2024 Amy Zhang Photography</p>
