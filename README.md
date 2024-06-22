@@ -34,9 +34,7 @@
         .container {
             padding: 2em;
         }
-        .about, .contact {
-            margin-bottom: 2em;
-        }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
