@@ -68,7 +68,7 @@
             <h2>About Me</h2>
             <p>Hi, I'm Amy! I'm the News Photo Editor of Vol. 120 of The Duke Chronicle, and I'm also a freelance photographer in Durham, NC. My 2024-2025 bookings are open.</p>
             <p>If you'd like to get in touch, please email me at <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a>.</p>
-            <p>To see more of my work, check out my Instagram at <a href="https://www.instagram.com/amydotjpeg"</a>.</p>
+            <p><a href="https://www.instagram.com/amydotjpeg" target="_blank">To see more of my work, check out my Instagram</a>.</p>
         </section>
         <h2>Gallery</h2>
         <section id="gallery" class="gallery">
