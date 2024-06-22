@@ -60,8 +60,6 @@
         <h1>Amy Zhang Photography</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
             </ul>
         </nav>
     </header>
