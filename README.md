@@ -72,21 +72,21 @@
         </section>
         <h2>Gallery</h2>
         <section id="gallery" class="gallery">
-            <img src="images/photo1.jpg" alt="Photo 1">
-            <img src="images/photo2.jpg" alt="Photo 2">
-            <img src="images/photo3.jpg" alt="Photo 3">
-            <img src="images/photo4.jpg" alt="Photo 4">
-            <img src="images/photo5.jpg" alt="Photo 5">
-            <img src="images/photo6.jpg" alt="Photo 6">
-            <img src="images/photo7.jpg" alt="Photo 7">
-            <img src="images/photo8.jpg" alt="Photo 8">
-            <img src="images/photo9.jpg" alt="Photo 9">            
-            <img src="images/photo10.jpg" alt="Photo 10">
-            <img src="images/photo11.jpg" alt="Photo 11">
-            <img src="images/photo12.jpg" alt="Photo 12">            
-            <img src="images/photo13.jpg" alt="Photo 13">
-            <img src="images/photo14.jpg" alt="Photo 14">
-            <img src="images/photo15.jpg" alt="Photo 15">
+            <img src="compressed images/photo1-min.jpg" alt="Photo 1">
+            <img src="compressed images/photo2-min.jpg" alt="Photo 2">
+            <img src="compressed images/photo3-min.jpg" alt="Photo 3">
+            <img src="compressed images/photo4-min.jpg" alt="Photo 4">
+            <img src="compressed images/photo5-min.jpg" alt="Photo 5">
+            <img src="compressed images/photo6-min.jpg" alt="Photo 6">
+            <img src="compressed images/photo7-min.jpg" alt="Photo 7">
+            <img src="compressed images/photo8-min.jpg" alt="Photo 8">
+            <img src="compressed images/photo9-min.jpg" alt="Photo 9">            
+            <img src="compressed images/photo10-min.jpg" alt="Photo 10">
+            <img src="compressed images/photo11-min.jpg" alt="Photo 11">
+            <img src="compressed images/photo12-min.jpg" alt="Photo 12">            
+            <img src="compressed images/photo13-min.jpg" alt="Photo 13">
+            <img src="compressed images/photo14-min.jpg" alt="Photo 14">
+            <img src="compressed images/photo15-min.jpg" alt="Photo 15">
         </section>
     </div>
     <footer>
