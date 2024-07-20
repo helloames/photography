@@ -1,1 +1,1 @@
-# hi! This is a simple website template to display a photography portfolio. This was written with ___, __, and __. Feel free to use for your projects!
+hi! This is a simple website template I created to display a photography portfolio. This was written with HTML, CSS, and JavaScript. Feel free to use for your projects under the MIT license!
