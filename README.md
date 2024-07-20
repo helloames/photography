@@ -39,8 +39,8 @@
             align-items: flex-start;
         }
         .about img {
-            width: 300px; /* Increased size */
-            height: 300px; /* Increased size */
+            width: 200px; /* Increased size */
+            height: 200px; /* Increased size */
             border-radius: 50%;
             margin-left: 20px;
             margin-top: 60px; /* Ensure it remains aligned as before */
