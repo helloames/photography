@@ -8,19 +8,19 @@
     <style>
         :root {
             --primary-color: #1a1a1a;
-            --secondary-color: #ffffff; /* Changed to white */
-            --accent-color: #1e4d2b; /* Dark green accent color */
+            --secondary-color: #ffffff;
+            --accent-color: #1e4d2b;
         }
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: var(--secondary-color); /* Set to white */
+            background: var(--secondary-color);
             color: var(--primary-color);
             line-height: 1.6;
         }
         header {
-            background: var(--secondary-color); /* Set to white */
+            background: var(--secondary-color);
             padding: 2em 0;
         }
         h1, h2 {
@@ -30,7 +30,7 @@
             color: var(--accent-color);
         }
         h1 {
-            font-size: 4.5em; /* Increased size for main title */
+            font-size: 4.5em;
             margin-bottom: 0.2em;
             letter-spacing: 2px;
         }
@@ -62,7 +62,8 @@
             height: 100%;
             object-fit: cover;
             transition: opacity 0.3s ease;
-            border-radius: 10px; /* Rounds the corners of the images */
+            border-radius: 10px;
+            cursor: pointer;
         }
         .gallery img:hover {
             opacity: 0.8;
@@ -97,7 +98,7 @@
             text-align: center;
             padding: 2em 0;
             margin-top: 4em;
-            font-family: 'Poppins', sans-serif; /* Ensuring footer text uses Poppins */
+            font-family: 'Poppins', sans-serif;
         }
         a {
             color: var(--accent-color);
@@ -159,7 +160,27 @@
     </div>
 
     <script>
-        // ... (JavaScript remains unchanged)
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modal-img');
+        const closeBtn = document.getElementsByClassName('close')[0];
+        const galleryImages = document.querySelectorAll('.gallery img');
+
+        galleryImages.forEach(img => {
+            img.onclick = function() {
+                modal.style.display = "flex";
+                modalImg.src = this.src;
+            }
+        });
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
     </script>
 </body>
 </html>
