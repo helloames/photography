@@ -43,7 +43,7 @@
             height: 200px; /* Increased size */
             border-radius: 50%;
             margin-left: 20px;
-            margin-top: 50px; /* Ensure it remains aligned as before */
+            margin-top: 40px; /* Ensure it remains aligned as before */
         }
         .about div {
             flex: 1;
