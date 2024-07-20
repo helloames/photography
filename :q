@@ -1,0 +1,18 @@
+Revert "seperate the about, gallery, and contact pages"
+
+This reverts commit 3eae343220e8397373c6b885b0c20b193e2f5f28.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   .DS_Store
+#	deleted:    about.html
+#	deleted:    contact.html
+#	deleted:    gallery.html
+#	modified:   index.html
+#	deleted:    styles.css
+#
