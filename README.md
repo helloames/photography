@@ -62,6 +62,7 @@
             border-radius: 4px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
+            cursor: pointer;
         }
         .gallery img:hover {
             transform: scale(1.05);
@@ -81,6 +82,31 @@
         }
         .gallery img:hover::before {
             opacity: 1;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+        }
+        .modal .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2em;
+            color: #fff;
+            cursor: pointer;
         }
         footer {
             background: #fff;
@@ -130,5 +156,37 @@
     <footer>
         <p>&copy; 2024 Amy Zhang Photography</p>
     </footer>
+
+    <!-- Modal for Fullscreen Image -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modal-img" src="" alt="Enlarged Photo">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const galleryImages = document.querySelectorAll('.gallery img');
+            const modal = document.getElementById('modal');
+            const modalImg = document.getElementById('modal-img');
+            const closeBtn = document.querySelector('.modal .close');
+
+            galleryImages.forEach(img => {
+                img.addEventListener('click', function () {
+                    modal.style.display = 'flex';
+                    modalImg.src = this.src;
+                });
+            });
+
+            closeBtn.addEventListener('click', function () {
+                modal.style.display = 'none';
+            });
+
+            window.addEventListener('click', function (event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
