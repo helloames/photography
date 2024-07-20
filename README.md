@@ -1,6 +1,4 @@
-
-
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,6 +34,20 @@
         .container {
             padding: 2em;
         }
+        .about {
+            display: flex;
+            align-items: flex-start;
+        }
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-left: 20px;
+            margin-top: 60px; /* Adjusted to move the image down by 20px more */
+        }
+        .about div {
+            flex: 1;
+        }
         .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -67,10 +79,13 @@
     </header>
     <div class="container">
         <section id="about" class="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm Amy! I'm the News Photo Editor of Vol. 120 of The Duke Chronicle, and I'm also a freelance photographer in Durham, NC. My 2024-2025 bookings are open.</p>
-            <p>If you'd like to get in touch, please email me at <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a>.</p>
-            <p><a href="https://www.instagram.com/amydotjpeg" target="_blank">To see more of my work, check out my Instagram</a>.</p>
+            <div>
+                <h2>About Me</h2>
+                <p>Hi, I'm Amy! I'm the News Photo Editor of Vol. 120 of The Duke Chronicle, and I'm also a freelance photographer in Durham, NC. My 2024-2025 bookings are open.</p>
+                <p>If you'd like to get in touch, please email me at <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a>.</p>
+                <p><a href="https://www.instagram.com/amydotjpeg" target="_blank">To see more of my work, check out my Instagram</a>.</p>
+            </div>
+            <img src="pfp.jpg" alt="Amy Zhang">
         </section>
         <h2>Gallery</h2>
         <section id="gallery" class="gallery">
