@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography Portfolio</title>
+    <title>Amy Zhang Photography Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -39,11 +39,11 @@
             align-items: flex-start;
         }
         .about img {
-            width: 200px; /* Increased size */
-            height: 200px; /* Increased size */
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             margin-left: 20px;
-            margin-top: 40px; /* Ensure it remains aligned as before */
+            margin-top: 40px;
         }
         .about div {
             flex: 1;
@@ -60,6 +60,27 @@
             height: 100%;
             object-fit: cover;
             border-radius: 4px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .gallery img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 4px;
+        }
+        .gallery img:hover::before {
+            opacity: 1;
         }
         footer {
             background: #fff;
