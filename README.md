@@ -39,11 +39,11 @@
             align-items: flex-start;
         }
         .about img {
-            width: 150px;
-            height: 150px;
+            width: 300px; /* Increased size */
+            height: 300px; /* Increased size */
             border-radius: 50%;
             margin-left: 20px;
-            margin-top: 60px; /* Adjusted to move the image down by 20px more */
+            margin-top: 60px; /* Ensure it remains aligned as before */
         }
         .about div {
             flex: 1;
