@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,21 +36,23 @@
         }
         .about {
             display: flex;
-            align-items: flex-start;
+            flex-direction: column; /* Changed from row to column */
+            align-items: center; /* Center items horizontally */
+            text-align: center; /* Center text */
         }
         .about img {
-            width: 200px;
-            height: 200px;
+            width: 250px; /* Increased size */
+            height: 250px; /* Increased size */
             border-radius: 50%;
-            margin-left: 20px;
-            margin-top: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .about div {
-            flex: 1;
+            margin-bottom: 1em;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
             gap: 20px;
             max-width: 900px;
             margin: 0 auto;
@@ -113,6 +115,42 @@
             color: #000;
             text-align: center;
             padding: 1em 0;
+        }
+        /* Media Queries for Smaller Screens */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1em;
+            }
+            header h1 {
+                font-size: 1.5em;
+            }
+            .about img {
+                width: 200px; /* Slightly smaller size for tablets */
+                height: 200px;
+            }
+            .gallery {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+                gap: 15px;
+            }
+            .modal .close {
+                font-size: 1.5em;
+                top: 10px;
+                right: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2em;
+            }
+            .about img {
+                width: 150px; /* Smaller size for mobile */
+                height: 150px;
+            }
+            .gallery {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for mobile */
+                gap: 10px;
+            }
         }
     </style>
 </head>
@@ -190,3 +228,4 @@
     </script>
 </body>
 </html>
+
