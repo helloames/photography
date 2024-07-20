@@ -85,7 +85,7 @@
                 <p>If you'd like to get in touch, please email me at <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a>.</p>
                 <p><a href="https://www.instagram.com/amydotjpeg" target="_blank">To see more of my work, check out my Instagram</a>.</p>
             </div>
-            <img src="pfp.jpg" alt="Amy Zhang">
+            <img src="pfp.heic" alt="Amy Zhang">
         </section>
         <h2>Gallery</h2>
         <section id="gallery" class="gallery">
