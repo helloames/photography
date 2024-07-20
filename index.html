@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amy Zhang Photography</title>
+    <!-- link to "Dawning of a New Day" front from Google fonts - can change link here to switch fonts for subheadings -->
     <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <!-- styling, font colors, etcetera -->
     <style>
         :root {
             --primary-color: #1a1a1a;
-            --secondary-color: #ffffff; /* White */
-            --accent-color: #1e4d2b; /* Dark green accent color */
-            --body-text-color: #1a1a1a; /* Body text color */
+            --secondary-color: #ffffff; /* white */
+            --accent-color: #1e4d2b; /* dark green accent color; feel free to replace your accept color as needed */
+            --body-text-color: #1a1a1a; /* body text color */
         }
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', sans-serif; /* some CSS code!!! */
             margin: 0;
             padding: 0;
-            background: var(--secondary-color); /* Set to white */
+            background: var(--secondary-color); /* set to white */
             color: var(--body-text-color);
             line-height: 1.6;
         }
         header {
-            background: var(--secondary-color); /* Set to white */
-            padding: 1em 0; /* Reduced padding */
+            background: var(--secondary-color); /* set to white */
+            padding: 1em 0; /* padding */
         }
         h1, h2 {
             font-family: 'Dawning of a New Day', cursive;
@@ -30,8 +32,8 @@
             text-align: center;
             color: var(--accent-color);
         }
-        h1, h2 { /* Ensuring both headings have the same size */
-            font-size: 4.5em; /* Increased size for main title */
+        h1, h2 { /* ensure both headings have the same size */
+            font-size: 4.5em; /* increased size for main title */
             margin-bottom: 0.2em;
             letter-spacing: 2px;
         }
@@ -60,8 +62,8 @@
             height: 100%;
             object-fit: cover;
             transition: opacity 0.3s ease;
-            border-radius: 10px; /* Rounds the corners of the images */
-            cursor: pointer; /* Change cursor to pointer on hover */
+            border-radius: 10px; /* rounds the corners of the images; the higher this number, the rounder the corners */
+            cursor: pointer; /* change cursor to pointer on hover */
         }
         .gallery img:hover {
             opacity: 0.8;
@@ -77,7 +79,7 @@
             z-index: 1000;
             align-items: center;
             justify-content: center;
-            cursor: pointer; /* Change cursor to pointer on hover */
+            cursor: pointer; /* change cursor to pointer on hover */
         }
         .modal img {
             max-width: 90%;
@@ -110,7 +112,7 @@
             .container {
                 padding: 0 1em;
             }
-            h1, h2 { /* Ensuring both headings have the same size */
+            h1, h2 { /* ensure both headings have the same size */
                 font-size: 3.5em;
             }
         }
@@ -120,7 +122,9 @@
     <header>
         <h1>Amy Zhang Photography</h1>
     </header>
+    <!-- some HTML code!!! -->
     <div class="container">
+    <!-- this is the bio section - feel free to edit here as needed -->
         <section class="about">
             <h2>About Me</h2>
             <p>Hi, I'm Amy! I'm the News Photo Editor of Vol. 120 of The Duke Chronicle, and I'm also a freelance photographer in Durham, NC. My 2024-2025 bookings are open.</p>
@@ -147,6 +151,7 @@
     </div>
 
     <div class="copyright">
+    <!-- copyright notice; change as needed -->
         <p>&copy; 2024 Amy Zhang Photography</p>
     </div>
 
@@ -156,7 +161,7 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function() { /* some JavaScript code to add interactivity to the website!!! */
             const galleryImages = document.querySelectorAll(".gallery img");
             const modal = document.getElementById("modal");
             const modalImg = document.getElementById("modal-img");
@@ -173,7 +178,7 @@
                 modal.style.display = "none";
             });
 
-            // Close the modal when clicking outside the image
+            // close the modal when clicking outside the image or on the x
             modal.addEventListener("click", function(e) {
                 if (e.target !== modalImg) {
                     modal.style.display = "none";
