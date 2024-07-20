@@ -39,18 +39,18 @@
             align-items: flex-start;
         }
         .about img {
-            width: 200px; /* Increased size */
-            height: 200px; /* Increased size */
+            width: 160px; /* Increased size */
+            height: 160px; /* Increased size */
             border-radius: 50%;
             margin-left: 20px;
-            margin-top: 450px; /* Ensure it remains aligned as before */
+            margin-top: 60px; /* Ensure it remains aligned as before */
         }
         .about div {
             flex: 1;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grd-template-columns: repeat(3, 1fr);
             gap: 20px;
             max-width: 900px;
             margin: 0 auto;
