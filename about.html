@@ -22,10 +22,16 @@
                 color: var(--body-text-color);
                 font-size: 16px; /* Explicitly set body text size */
                 line-height: 1.6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
             }
             header {
                 background: var(--secondary-color); /* set to white */
                 padding: 1em 0; /* padding */
+                width: 100%;
             }
             h1, h2 {
                 font-family: 'Dawning of a New Day', cursive;
@@ -42,13 +48,14 @@
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 0 2em;
+                width: 100%;
             }
-            .about {
+            .contact {
                 text-align: center;
                 max-width: 800px;
                 margin: 0 auto 4em;
             }
-            .about p {
+            .contact p {
                 font-size: 1.1em;
                 margin-bottom: 1.5em;
                 color: var(--body-text-color);
@@ -141,11 +148,11 @@
             }
     
             footer {
-            text-align: center;
-            padding: 1em 0;
-            margin-top: 2em;
-            font-size: 20px; /* Match body text size */
-        }
+                text-align: center;
+                padding: 1em 0;
+                margin-top: 2em;
+                font-size: 18px; /* Match body text size */
+            }
     
         </style>
     </head>
