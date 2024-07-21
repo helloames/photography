@@ -3,43 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Amy Zhang Photography</title>
+    <title>Amy Zhang Photography</title>
+    <!-- link to "Dawning of a New Day" front from Google fonts - can change link here to switch fonts for subheadings -->
     <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- styling, font colors, etcetera -->
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #ffffff; /* white */
+            --accent-color: #1e4d2b; /* dark green accent color; feel free to replace your accept color as needed */
+            --body-text-color: #1a1a1a; /* body text color */
+        }
+        body {
+            font-family: 'Poppins', sans-serif; /* some CSS code!!! */
+            margin: 0;
+            padding: 0;
+            background: var(--secondary-color); /* set to white */
+            color: var(--body-text-color);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--secondary-color); /* set to white */
+            padding: 1em 0; /* padding */
+        }
+        h1, h2 {
+            font-family: 'Dawning of a New Day', cursive;
+            font-weight: 700;
+            text-align: center;
+            color: var(--accent-color);
+        }
+        h1, h2 { /* ensure both headings have the same size */
+            font-size: 4.5em; /* increased size for main title */
+            margin-bottom: 0.2em;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2em;
+        }
+        .about {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4em;
+        }
+        .about p {
+            font-size: 1.1em;
+            margin-bottom: 1.5em;
+            color: var(--body-text-color);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+        }
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+            border-radius: 0px; /* rounds the corners of the images; the higher this number, the rounder the corners */
+            cursor: pointer; /* change cursor to pointer on hover */
+        }
+        .gallery img:hover {
+            opacity: 0.8;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer; /* change cursor to pointer on hover */
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .modal .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2em;
+            color: var(--secondary-color);
+            cursor: pointer;
+        }
+        .copyright {
+            text-align: center;
+            font-size: 1em;
+            color: var(--primary-color);
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+        a:hover {
+            opacity: 0.7;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1em;
+            }
+            h1, h2 { /* ensure both headings have the same size */
+                font-size: 3.5em;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Amy Zhang Photography</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-
-    <main class="container">
+    <!-- some HTML code!!! -->
+    <div class="container">
+    <!-- this is the bio section - feel free to edit here as needed -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Amy! I'm the News Photo Editor of Vol. 120 of The Duke Chronicle, and I'm also a freelance photographer in Durham, NC. My 2024-2025 bookings are open.</p>
+            <p>If you'd like to get in touch, please email me at <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a>. To see more of my work, check out my <a href="https://www.instagram.com/amydotjpeg" target="_blank">Instagram</a>.</p>
+        </section>
         <h2>Gallery</h2>
         <section class="gallery">
-            <!-- Your existing gallery images here -->
             <img src="compressed images attempt 2/photo1zon.jpg" alt="Photo 1">
             <img src="compressed images attempt 2/photo2zon.jpg" alt="Photo 2">
-            <!-- ... Add all 15 images ... -->
+            <img src="compressed images attempt 2/photo3zon.jpg" alt="Photo 3">
+            <img src="compressed images attempt 2/photo4zon.jpg" alt="Photo 4">
+            <img src="compressed images attempt 2/photo5zon.jpg" alt="Photo 5">
+            <img src="compressed images attempt 2/photo6zon.jpg" alt="Photo 6">
+            <img src="compressed images attempt 2/photo7zon.jpg" alt="Photo 7">
+            <img src="compressed images attempt 2/photo8zon.jpg" alt="Photo 8">
+            <img src="compressed images attempt 2/photo9zon.jpg" alt="Photo 9">            
+            <img src="compressed images attempt 2/photo10zon.jpg" alt="Photo 10">
+            <img src="compressed images attempt 2/photo11zon.jpg" alt="Photo 11">
+            <img src="compressed images attempt 2/photo12zon.jpg" alt="Photo 12">            
+            <img src="compressed images attempt 2/photo13zon.jpg" alt="Photo 13">
+            <img src="compressed images attempt 2/photo14zon.jpg" alt="Photo 14">
+            <img src="compressed images attempt 2/photo15zon.jpg" alt="Photo 15">
         </section>
-    </main>
+    </div>
 
-    <footer>
+    <div class="copyright">
+    <!-- copyright notice; change as needed -->
         <p>&copy; 2024 Amy Zhang Photography</p>
-    </footer>
+    </div>
 
     <div id="modal" class="modal">
         <span class="close">&times;</span>
         <img id="modal-img" src="" alt="Enlarged Photo">
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() { /* some JavaScript code to add interactivity to the website!!! */
+            const galleryImages = document.querySelectorAll(".gallery img");
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("modal-img");
+            const closeModal = document.querySelector(".modal .close");
+
+            galleryImages.forEach(img => {
+                img.addEventListener("click", function() {
+                    modal.style.display = "flex";
+                    modalImg.src = this.src;
+                });
+            });
+
+            closeModal.addEventListener("click", function() {
+                modal.style.display = "none";
+            });
+
+            // close the modal when clicking outside the image or on the x
+            modal.addEventListener("click", function(e) {
+                if (e.target !== modalImg) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
