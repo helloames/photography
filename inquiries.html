@@ -32,6 +32,7 @@
                 background: var(--secondary-color); /* set to white */
                 padding: 1em 0; /* padding */
                 width: 100%;
+                text-align: center; /* Center content */
             }
             h1, h2 {
                 font-family: 'Dawning of a New Day', cursive;
@@ -43,6 +44,13 @@
                 font-size: 4.5em; /* increased size for main title */
                 margin-bottom: 0.2em;
                 letter-spacing: 2px;
+            }
+            .profile-pic {
+                width: 200px; /* adjust as needed */
+                height: 200px; /* adjust as needed */
+                border-radius: 50%; /* makes the image round */
+                object-fit: cover;
+                margin: 1em auto; /* centers the image and add smaller margin */
             }
             .container {
                 max-width: 1200px;
@@ -124,7 +132,6 @@
                     font-size: 3.5em;
                 }
             }
-    
             .dog {
                 width: 400px; /* adjust as needed */
                 height: 600px; /* adjust as needed */
@@ -132,38 +139,26 @@
                 object-fit: cover;
                 margin: 1em auto; /* centers the image and add smaller margin */
             }
-
             nav ul {
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
                 display: flex;
                 justify-content: center;
-                font-size: 16px; /* Explicitly set font size to match body text size */
+                font-size: 16px; /* explicity set font size to match body text size */
             }
-    
             nav ul li {
                 margin: 0 10px;
             }
-    
             nav ul li a {
                 color: var(--accent-color);
                 text-decoration: none;
-                font-weight: normal; /* Change to normal to match body font weight */
-                font-size: inherit; /* Inherit font size from ul */
+                font-weight: normal; /* change to normal to match body font weight */
+                font-size: inherit; /* inherit font size from ul */
             }
-    
             nav ul li a:hover {
                 text-decoration: underline;
             }
-    
-            footer {
-                text-align: center;
-                padding: 1em 0;
-                margin-top: 2em;
-                font-size: 15px; /* Match body text size */
-            }
-    
         </style>
     </head>
 <body>
