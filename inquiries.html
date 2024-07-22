@@ -4,15 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Amy Zhang Photography</title>
-        <!-- link to "Dawning of a New Day" front from Google fonts - can change link here to switch fonts for subheadings -->
         <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-        <!-- styling, font colors, etcetera -->
         <style>
             :root {
                 --primary-color: #1a1a1a;
-                --secondary-color: #ffffff; /* white */
-                --accent-color: #1e4d2b; /* dark green accent color; feel free to replace your accept color as needed */
-                --body-text-color: #1a1a1a; /* body text color */
+                --secondary-color: #ffffff;
+                --accent-color: #1e4d2b;
+                --body-text-color: #1a1a1a;
             }
             body {
                 font-family: 'Poppins', sans-serif;
@@ -20,7 +18,7 @@
                 padding: 0;
                 background: var(--secondary-color);
                 color: var(--body-text-color);
-                font-size: 16px; /* Explicitly set body text size */
+                font-size: 16px;
                 line-height: 1.6;
                 display: flex;
                 flex-direction: column;
@@ -29,28 +27,26 @@
                 min-height: 100vh;
             }
             header {
-                background: var(--secondary-color); /* set to white */
-                padding: 1em 0; /* padding */
+                background: var(--secondary-color);
+                padding: 1em 0;
                 width: 100%;
-                text-align: center; /* Center content */
+                text-align: center;
             }
             h1, h2 {
                 font-family: 'Dawning of a New Day', cursive;
                 font-weight: 700;
                 text-align: center;
                 color: var(--accent-color);
-            }
-            h1, h2 { /* ensure both headings have the same size */
-                font-size: 4.5em; /* increased size for main title */
+                font-size: 4.5em;
                 margin-bottom: 0.2em;
                 letter-spacing: 2px;
             }
             .profile-pic {
-                width: 200px; /* adjust as needed */
-                height: 200px; /* adjust as needed */
-                border-radius: 50%; /* makes the image round */
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
                 object-fit: cover;
-                margin: 1em auto; /* centers the image and add smaller margin */
+                margin: 1em auto;
             }
             .container {
                 max-width: 1200px;
@@ -68,6 +64,36 @@
                 margin-bottom: 1.5em;
                 color: var(--body-text-color);
             }
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+            .contact-form label {
+                font-size: 1em;
+                font-weight: bold;
+                color: var(--primary-color);
+            }
+            .contact-form input, .contact-form textarea {
+                padding: 0.5em;
+                border: 1px solid var(--primary-color);
+                border-radius: 4px;
+                font-size: 1em;
+                width: 100%;
+            }
+            .contact-form button {
+                background: var(--accent-color);
+                color: var(--secondary-color);
+                border: none;
+                padding: 0.75em;
+                font-size: 1em;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background 0.3s ease;
+            }
+            .contact-form button:hover {
+                background: darken(var(--accent-color), 10%);
+            }
             .gallery {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -78,8 +104,7 @@
                 height: 100%;
                 object-fit: cover;
                 transition: opacity 0.3s ease;
-                border-radius: 0px; /* rounds the corners of the images; the higher this number, the rounder the corners */
-                cursor: pointer; /* change cursor to pointer on hover */
+                cursor: pointer;
             }
             .gallery img:hover {
                 opacity: 0.8;
@@ -95,7 +120,7 @@
                 z-index: 1000;
                 align-items: center;
                 justify-content: center;
-                cursor: pointer; /* change cursor to pointer on hover */
+                cursor: pointer;
             }
             .modal img {
                 max-width: 90%;
@@ -111,7 +136,7 @@
             }
             .copyright {
                 text-align: center;
-                font-size: 16px; /* match body text size */
+                font-size: 16px;
                 color: var(--primary-color);
                 padding: 1em 0;
                 margin-top: 2em;
@@ -128,16 +153,15 @@
                 .container {
                     padding: 0 1em;
                 }
-                h1, h2 { /* ensure both headings have the same size */
+                h1, h2 {
                     font-size: 3.5em;
                 }
             }
             .dog {
-                width: 400px; /* adjust as needed */
-                height: 600px; /* adjust as needed */
-                border-radius: 0%; /* makes the image round */
+                width: 400px;
+                height: 600px;
                 object-fit: cover;
-                margin: 1em auto; /* centers the image and add smaller margin */
+                margin: 1em auto;
             }
             nav ul {
                 list-style-type: none;
@@ -145,7 +169,7 @@
                 margin: 0;
                 display: flex;
                 justify-content: center;
-                font-size: 16px; /* explicity set font size to match body text size */
+                font-size: 16px;
             }
             nav ul li {
                 margin: 0 10px;
@@ -153,43 +177,48 @@
             nav ul li a {
                 color: var(--accent-color);
                 text-decoration: none;
-                font-weight: normal; /* change to normal to match body font weight */
-                font-size: inherit; /* inherit font size from ul */
+                font-weight: normal;
+                font-size: inherit;
             }
             nav ul li a:hover {
                 text-decoration: underline;
             }
         </style>
     </head>
-<body>
-    <header>
-        <h1>Amy Zhang Photography</h1>
-        <!-- navigation bar -->
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="inquiries.html">Inquiries</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <h1>Amy Zhang Photography</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="inquiries.html">Inquiries</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main class="copyright">
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a></p>
-            <!-- add a contact form or more contact information here if desired -->
-        </section>
-    </main>
+        <main class="copyright">
+            <section class="contact">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a></p>
+                <form class="contact-form" action="mailto:amy.zhang@duke.edu" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
 
+        <img src="hiro.jpg" alt="Hiro Liu" class="dog">
 
-    <img src="hiro.jpg" alt="Hiro Liu" class="dog">
-
-    <div class="copyright">
-        <!-- copyright notice; change as needed -->
+        <div class="copyright">
             <p>&copy; 2024 Amy Zhang Photography</p>
         </div>
 
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
