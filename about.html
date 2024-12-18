@@ -4,15 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Amy Zhang Photography</title>
-        <!-- link to "Dawning of a New Day" front from Google fonts - can change link here to switch fonts for subheadings -->
         <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-        <!-- styling, font colors, etcetera -->
         <style>
             :root {
                 --primary-color: #1a1a1a;
-                --secondary-color: #ffffff; /* white */
-                --accent-color: #1e4d2b; /* dark green accent color; feel free to replace your accept color as needed */
-                --body-text-color: #1a1a1a; /* body text color */
+                --secondary-color: #ffffff;
+                --accent-color: #1e4d2b;
+                --body-text-color: #1a1a1a;
             }
             body {
                 font-family: 'Poppins', sans-serif;
@@ -20,124 +18,57 @@
                 padding: 0;
                 background: var(--secondary-color);
                 color: var(--body-text-color);
-                font-size: 16px; /* Explicitly set body text size */
+                font-size: 16px;
                 line-height: 1.6;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                min-height: 100vh;
             }
             header {
-                background: var(--secondary-color); /* set to white */
-                padding: 1em 0; /* padding */
+                background: var(--secondary-color);
+                padding: 1em 0;
                 width: 100%;
-                text-align: center; /* Center content */
+                text-align: center;
             }
             h1, h2 {
                 font-family: 'Dawning of a New Day', cursive;
                 font-weight: 700;
-                text-align: center;
                 color: var(--accent-color);
             }
-            h1, h2 { /* ensure both headings have the same size */
-                font-size: 4.5em; /* increased size for main title */
+            h1 {
+                font-size: 4.5em;
                 margin-bottom: 0.2em;
                 letter-spacing: 2px;
             }
-            .profile-pic {
-                width: 200px; /* adjust as needed */
-                height: 200px; /* adjust as needed */
-                border-radius: 50%; /* makes the image round */
-                object-fit: cover;
-                margin: 1em auto; /* centers the image and add smaller margin */
+            h2 {
+                font-size: 3em;
+                margin-bottom: 1em;
             }
-            .container {
+            .profile-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 max-width: 1200px;
-                margin: 0 auto;
+                margin: 2em auto;
                 padding: 0 2em;
-                width: 100%;
             }
-            .contact {
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto 4em;
+            .profile-text {
+                flex: 1;
+                text-align: left;
             }
-            .contact p {
-                font-size: 1.1em;
+            .profile-text h2 {
+                font-size: 4em;
+                margin-bottom: 0.5em;
+                color: var(--accent-color);
+            }
+            .profile-text p {
                 margin-bottom: 1.5em;
                 color: var(--body-text-color);
             }
-            .gallery {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 2em;
-            }
-            .gallery img {
-                width: 100%;
-                height: 100%;
+            .profile-pic {
+                flex-shrink: 0;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
                 object-fit: cover;
-                transition: opacity 0.3s ease;
-                border-radius: 0px; /* rounds the corners of the images; the higher this number, the rounder the corners */
-                cursor: pointer; /* change cursor to pointer on hover */
-            }
-            .gallery img:hover {
-                opacity: 0.8;
-            }
-            .modal {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.9);
-                z-index: 1000;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer; /* change cursor to pointer on hover */
-            }
-            .modal img {
-                max-width: 90%;
-                max-height: 90%;
-            }
-            .modal .close {
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                font-size: 2em;
-                color: var(--secondary-color);
-                cursor: pointer;
-            }
-            .copyright {
-                text-align: center;
-                font-size: 16px; /* match body text size */
-                color: var(--primary-color);
-                padding: 1em 0;
-                margin-top: 2em;
-            }
-            a {
-                color: var(--accent-color);
-                text-decoration: none;
-                transition: opacity 0.3s ease;
-            }
-            a:hover {
-                opacity: 0.7;
-            }
-            @media (max-width: 768px) {
-                .container {
-                    padding: 0 1em;
-                }
-                h1, h2 { /* ensure both headings have the same size */
-                    font-size: 3.5em;
-                }
-            }
-            .dog {
-                width: 400px; /* adjust as needed */
-                height: 600px; /* adjust as needed */
-                border-radius: 0%; /* makes the image round */
-                object-fit: cover;
-                margin: 1em auto; /* centers the image and add smaller margin */
+                margin-left: 2em;
             }
             nav ul {
                 list-style-type: none;
@@ -145,7 +76,6 @@
                 margin: 0;
                 display: flex;
                 justify-content: center;
-                font-size: 16px; /* Explicitly set font size to match body text size */
             }
             nav ul li {
                 margin: 0 10px;
@@ -153,38 +83,53 @@
             nav ul li a {
                 color: var(--accent-color);
                 text-decoration: none;
-                font-weight: normal; /* Change to normal to match body font weight */
-                font-size: inherit; /* Inherit font size from ul */
+                font-weight: normal;
+                font-size: 16px;
             }
             nav ul li a:hover {
                 text-decoration: underline;
             }
+            @media (max-width: 768px) {
+                .profile-container {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .profile-pic {
+                    margin: 1em 0;
+                }
+            }
+            .copyright {
+                text-align: center;
+                font-size: 16px;
+                color: var(--primary-color);
+                padding: 1em 0;
+                margin-top: 2em;
+            }
         </style>
     </head>
-<body>
-    <header>
-        <h1>Amy Zhang Photography</h1>
-        <!-- navigation bar -->
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="inquiries.html">Inquiries</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container">
-        <section class="copyright">
-            <img src="pfp.jpg" alt="Amy Zhang" class="profile-pic">
-            <h2>About Me</h2>
-            <p>Hi, I'm Amy! I'm a Durham-based freelance photographer specializing in graduation, portrait, and engagement photography. My work blends candid emotion and polished professionalism, and I'm excited to work with you! My 2024-2025 bookings are open. If you'd like to contact me, please email me at <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a>. To see more of my work, check out my <a href="https://www.instagram.com/amydotjpeg" target="_blank">Instagram</a>. To send tips to The Chronicle, go <a href="https://www.dukechronicle.com/page/send-a-tip" target="_blank">here</a>.</p>
-            <p>Outside of freelancing, I'm a staff sports photographer and the Vol. 120 News Photo Editor at The Chronicle. I'm a Duke sophomore double-majoring in Computer Science and Statistics. I grew up in Charlotte, NC, and when I'm not on campus, I split my time between the beautiful Pacific Northwest and North Carolina. I enjoy spending time with family, hiking, and eating cheesecake.</p>
-        </section>
-    </main>
-    <div class="copyright">
-        <!-- copyright notice; change as needed -->
+    <body>
+        <header>
+            <h1>Amy Zhang Photography</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="inquiries.html">Inquiries</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="profile-container">
+                <div class="profile-text">
+                    <h2>Hello! I'm Amy</h2>
+                    <p>Hi, I'm Amy! I'm a Durham-based freelance photographer specializing in graduation, portrait, and engagement photography. My work blends candid emotion and polished professionalism, and I'm excited to work with you! My 2024-2025 bookings are open. If you'd like to contact me, please email me at <a href="mailto:amy.zhang@duke.edu">amy.zhang@duke.edu</a>. To see more of my work, check out my <a href="https://www.instagram.com/amydotjpeg" target="_blank">Instagram</a>. To send tips to The Chronicle, go <a href="https://www.dukechronicle.com/page/send-a-tip" target="_blank">here</a>.</p>
+                    <p>Outside of freelancing, I'm a staff sports photographer and the Vol. 120 News Photo Editor at The Chronicle. I'm a Duke sophomore double-majoring in Computer Science and Statistics. I grew up in Charlotte, NC, and when I'm not on campus, I split my time between the beautiful Pacific Northwest and North Carolina. I enjoy spending time with family, hiking, and eating cheesecake.</p>
+                </div>
+                <img src="pfp.jpg" alt="Amy Zhang" class="profile-pic">
+            </div>
+        </main>
+        <div class="copyright">
             <p>&copy; 2024 Amy Zhang Photography</p>
         </div>
-    <script src="script.js"></script>
-</body>
+    </body>
 </html>
