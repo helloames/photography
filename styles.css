@@ -169,61 +169,6 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/* Contact form styles */
-.contact {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 4em;
-}
-
-.contact p {
-    font-size: 1.1em;
-    margin-bottom: 1.5em;
-    color: var(--body-text-color);
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-form label {
-    font-size: 1em;
-    font-weight: bold;
-    color: var(--primary-color);
-    width: 100%;
-    text-align: left;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 0.5em;
-    border: 1px solid var(--primary-color);
-    border-radius: 4px;
-    font-size: 1em;
-    width: 100%;
-    max-width: 100%;
-}
-
-.contact-form button {
-    background: var(--accent-color);
-    color: var(--secondary-color);
-    border: none;
-    padding: 0.75em;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-    background: darken(var(--accent-color), 10%);
-}
-
 .copyright {
     text-align: center;
     font-size: 16px;
