@@ -117,8 +117,8 @@ nav ul li a:hover {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 1em; /* Bring picture closer to text */
-    margin-top: 5em;
+    margin-left: 5em; /* Bring picture closer to text */
+    margin-top: 3em;
 }
 
 /* Gallery styles */
@@ -223,15 +223,6 @@ nav ul li a:hover {
 
 .contact-form button:hover {
     background: darken(var(--accent-color), 10%);
-}
-
-/* Misc styles */
-.dog {
-    width: 400px;
-    height: 600px;
-    border-radius: 0%;
-    object-fit: cover;
-    margin: 1em auto;
 }
 
 .copyright {
