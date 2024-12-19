@@ -8,7 +8,7 @@
 
 /* Base styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Times New Roman', serif;  /* Changed from Poppins to Times New Roman */
     margin: 0;
     padding: 0;
     background: var(--secondary-color);
@@ -32,19 +32,25 @@ header {
 
 /* Typography */
 h1, h2 {
-    font-family: 'Dawning of a New Day', cursive;
+    font-family: 'Times New Roman', serif;  /* Changed from Dawning of a New Day to Times New Roman */
     font-weight: 700;
     text-align: center;
     color: var(--accent-color);
     font-size: 4.5em;
     margin-bottom: 0.2em;
     letter-spacing: 2px;
+    transition: font-style 0.3s ease;  /* Added transition for smooth hover effect */
+}
+
+h1:hover, h2:hover {
+    font-style: italic;  /* Added hover effect */
 }
 
 h2 {
-    text-align: left; /* Change this property to align text to the left */
+    text-align: left;
 }
 
+/* Rest of the CSS remains the same */
 /* Navigation */
 nav ul {
     list-style-type: none;
