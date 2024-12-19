@@ -74,18 +74,17 @@ nav ul li a:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 0 1em; /* Reduced padding for closer alignment */
     width: 100%;
 }
 
-/* Profile styles */
 .profile-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align elements to the left */
     max-width: 1200px;
     margin: 2em auto;
-    padding: 0 2em;
+    padding: 0 1em; /* Reduced padding */
 }
 
 .profile-text {
@@ -118,7 +117,7 @@ nav ul li a:hover {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 2em;
+    margin-left: 1em; /* Bring picture closer to text */
     margin-top: 5em;
 }
 
@@ -258,10 +257,6 @@ a:hover {
 @media (max-width: 768px) {
     .container {
         padding: 0 1em;
-    }
-    
-    h1, h2 {
-        font-size: 3.5em;
     }
     
     .profile-container {
