@@ -112,12 +112,12 @@ nav ul li a:hover {
 }
 
 .profile-pic {
-    width: 50px;
-    height: 50px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 5em; /* Bring picture closer to text */
-    margin-top: 3em;
+    margin-left: 2em;
+    margin-top: 5em;
 }
 
 /* Gallery styles */
@@ -246,7 +246,11 @@ a:hover {
 /* Media queries */
 @media (max-width: 768px) {
     .container {
-        padding: 0 2em;
+        padding: 0 1em;
+    }
+    
+    h1, h2 {
+        font-size: 3.5em;
     }
     
     .profile-container {
@@ -255,6 +259,6 @@ a:hover {
     }
     
     .profile-pic {
-        margin: 2em 0;
+        margin: 1em 0;
     }
 }
