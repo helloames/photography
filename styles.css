@@ -256,7 +256,7 @@ a:hover {
 /* Media queries */
 @media (max-width: 768px) {
     .container {
-        padding: 0 1em;
+        padding: 0 2em;
     }
     
     .profile-container {
@@ -265,6 +265,6 @@ a:hover {
     }
     
     .profile-pic {
-        margin: 1em 0;
+        margin: 2em 0;
     }
 }
