@@ -41,6 +41,10 @@ h1, h2 {
     letter-spacing: 2px;
 }
 
+h2 {
+    text-align: left; /* Change this property to align text to the left */
+}
+
 /* Navigation */
 nav ul {
     list-style-type: none;
