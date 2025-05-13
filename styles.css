@@ -122,7 +122,7 @@ nav ul li a:hover {
     border-radius: 50%;
     object-fit: cover;
     margin-left: 2em;
-    margin-top: 2em; 
+    margin-top: 0em; 
 }
 
 /* Gallery styles */
