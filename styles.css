@@ -126,7 +126,7 @@ nav ul li a:hover {
     border-radius: 50%;
     object-fit: cover;
     margin-left: 2em;
-    margin-top: 2em;  /* amy this is what you should adjust to adjust the height location of pfp! */
+    margin-top: 0.5em;  /* amy this is what you should adjust to adjust the height location of pfp! */
 }
 
 /* Gallery styles */
