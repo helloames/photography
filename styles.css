@@ -41,6 +41,11 @@ h1, h2 {
     letter-spacing: 2px;
 }
 
+header h1:hover {
+    font-family: 'Poppins', sans-serif;
+    transition: font-family 0.3s ease;
+}
+
 h2 {
     text-align: left; /* Change this property to align text to the left */
 }
