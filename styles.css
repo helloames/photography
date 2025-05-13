@@ -121,8 +121,8 @@ nav ul li a:hover {
 }
 
 .profile-pic {
-    width: 300;
-    height: 300;
+    width: 500;
+    height: 500;
     border-radius: 50%;
     object-fit: scale-down;
     margin-left: 2em;
