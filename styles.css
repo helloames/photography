@@ -123,7 +123,7 @@ nav ul li a:hover {
 .profile-pic {
     width: 500px;
     height: 500px;
-    border-radius: 50%;
+    border-radius: 30%;
     object-fit: cover;
     margin-left: 2em;
     margin-top: -1em;  /* amy this is what you should adjust to adjust the height location of pfp! */
