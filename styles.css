@@ -33,7 +33,7 @@ header {
 }
 
 /* Typography */
-h1, h2 {
+h1 {
     font-family: adobe-caslon-pro, serif;
     font-weight: 400;
     font-style: italic;
@@ -179,6 +179,9 @@ nav ul li a:hover {
 }
 
 .copyright {
+    font-family: adobe-caslon-pro, serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
     font-size: 16px;
     color: var(--primary-color);
@@ -208,6 +211,9 @@ a:hover {
     }
     
     .profile-container {
+        font-family: adobe-caslon-pro, serif;
+        font-weight: 400;
+        font-style: normal;
         flex-direction: column;
         text-align: center;
     }
